@@ -1,0 +1,28 @@
+[
+  {"keys": ["super+\\"], "command": "toggle_side_bar"},
+  {"keys": ["ctrl+\\"], "command": "toggle_side_bar"},
+  {"keys": ["super+shift+space"], "command": "expand_region"},
+  {"keys": ["option+up"], "command": "expand_region"},
+  {"keys": ["option+down"], "command": "expand_region", "args": {"undo": true }, "context": [{"key": "expand_region_soft_undo"}] },
+  {"keys": ["super+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  {"keys": ["escape"], "command": "exit_auto_complete_and_insert_mode", "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true }] },
+  {"keys": ["ctrl+["], "command": "exit_auto_complete_and_insert_mode", "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true }] },
+  {"keys": ["j", "j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] },
+  {"keys": ["shift+super+up"], "command": "swap_line_up"},
+  {"keys": ["shift+super+down"], "command": "swap_line_down"},
+  {"keys": ["super+shift+j"], "command": "join_lines"},
+  {
+    "keys": ["f1"],
+    "command": "dired",
+    "args": {
+      "immediate": true,
+      "single_pane": true,
+      "other_group": "left",
+      "project": true,
+      "vcs_color_blind": true,
+      "dired_hidden_files_patterns": [".*", "__pycache__", "*.pyc"]
+    }
+  },
+  {"keys": ["f3"], "command": "dired_jump", "args": {"new_window": true } },
+  {"keys": ["f3"], "command": "dired_jump_list"}
+]
