@@ -1,6 +1,7 @@
 [
   {"keys": ["super+\\"], "command": "toggle_side_bar"},
   {"keys": ["ctrl+\\"], "command": "toggle_side_bar"},
+  {"keys": ["shift+super+n"], "command": "advanced_new_file_new"},
   {"keys": ["super+shift+space"], "command": "expand_region"},
   {"keys": ["option+up"], "command": "expand_region"},
   {"keys": ["option+down"], "command": "expand_region", "args": {"undo": true }, "context": [{"key": "expand_region_soft_undo"}] },
